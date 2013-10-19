@@ -2,14 +2,22 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.trello4j</groupId>
+  <parent>
+    <groupId>io.trygvis</groupId>
+    <artifactId>trygvis-parent</artifactId>
+    <version>1</version>
+  </parent>
+
+	<groupId>io.trygvis.trello4j</groupId>
 	<artifactId>trello4j</artifactId>
-	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>1.0-2013.10.19-SNAPSHOT</version>
 
 	<name>trello4j</name>
 	<url>https://github.com/joelso/trello4j</url>
-	<description>Java wrapper around Trello API</description>
+	<description>
+    Java wrapper around Trello API.
+    A fork of the fork https://github.com/johanmynhardt/trello4j.
+  </description>
 
 	<licenses>
 		<license>
@@ -20,9 +28,9 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/joelso/trello4j</url>
-		<connection>scm:git:git://github.com/joelso/trello4j.git</connection>
-		<developerConnection>scm:git:git://github.com/joelso/trello4j.git</developerConnection>
+		<url>https://github.com/trygvis/trello4j</url>
+		<connection>scm:git:git://github.com/trygvis/trello4j.git</connection>
+		<developerConnection>scm:git:https://github.com/trygvis/trello4j.git</developerConnection>
 	</scm>
 
 	<developers>

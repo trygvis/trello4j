@@ -13,22 +13,21 @@ Please report any issues and/or participate in the development [here](https://tr
 	    <id>joelso-mvn-repo</id>
 	    <name>joelso github mvn repo</name>
 	    <url>https://raw.github.com/joelso/joelso-mvn-repo/master/snapshots/</url>
-	</repository>
+    </repository>
 	
-	...
-	
-	<dependency>
-	    <groupId>org.trello4j</groupId>
-		<artifactId>trello4j</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</dependency>
-	
+    ...
+
+    <dependency>
+      <groupId>org.trello4j</groupId>
+      <artifactId>trello4j</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
 
 ### Get source and build it
 
     git clone git@github.com:joelso/trello4j.git
-	cd trello4j
-	mvn install
+    cd trello4j
+    mvn install
 
 Now you got two options:
 
@@ -37,10 +36,10 @@ Now you got two options:
 
 ## Usage
 	
-	// myToken is optional, set to null if you are accessing public data
-    Trello trello = new TrelloImpl("myApiKey", "myToken");  
+    // myToken is optional, set to null if you are accessing public data
+    Trello trello = new TrelloImpl("myApiKey", "myToken");
 	
-	// example: get organization by its name
+    // example: get organization by its name
     Organization org = trello.getOrganization("fogcreek");
 
 

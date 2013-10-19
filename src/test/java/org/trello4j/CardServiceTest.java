@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.Test;
+import org.junit.*;
 import org.trello4j.core.TrelloTemplate;
 import org.trello4j.model.Action;
 import org.trello4j.model.Card;
@@ -24,6 +24,7 @@ import org.trello4j.model.Member;
 /**
  * @author Johan Mynhardt
  */
+@Ignore
 public class CardServiceTest {
 
 	// Note: this url was used to generate token with read, write permissions:
